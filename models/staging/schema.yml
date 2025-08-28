@@ -49,12 +49,12 @@ models:
       description: "Primary key, unique identifier for each product."
       tests:
           - unique
-          - not_null
-    - name: product_brand_id
-      description: "Foreign key linking the product to the corresponding brand."
+          - not_null 
+    - name: category_id
+      description: "Foreign key linking the product to the corresponding category."
       tests:
         - relationships:
-            name: brand_id_foreign_key_in_stg_localbike__brands
-            to: ref('stg_localbike__brands')
-            field: product_brand_id
+            name: category_id_foreign_key_in_stg_localbike__categories
+            to: ref('stg_localbike__categories')
+            field: category_id
         
