@@ -1,6 +1,6 @@
 SELECT
     customer_id,
-    COUNT(DISSTINCT order_id) AS total_orders,
+    COUNT(DISTINCT order_id) AS total_orders,
     SUM(product_quantity) AS total_units_sold,
     SUM(total_order_item_amount) AS total_spent,
     AVG(total_order_item_amount) AS avg_order_item_amount
