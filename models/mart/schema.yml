@@ -93,7 +93,7 @@ models:
         tests:
           - not_null
 
-  - name: mrt_localbike__customer_sales
+  - name: mrt_localbike__sales_by_customer
     description: Sales metrics aggregated at the customer level.
     columns:
       - name: customer_id
