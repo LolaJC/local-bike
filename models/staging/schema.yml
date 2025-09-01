@@ -54,7 +54,8 @@ models:
       description: "Foreign key linking the product to the corresponding category."
       tests:
         - relationships:
-            name: category_id_foreign_key_in_stg_localbike__categories
-            to: ref('stg_localbike__categories')
-            field: category_id
+            argumets:
+              name: category_id_foreign_key_in_stg_localbike__categories
+              to: ref('stg_localbike__categories')
+              field: category_id
         
