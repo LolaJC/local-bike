@@ -76,6 +76,10 @@ models:
   - name: mrt_localbike__sales_over_time
     description: Time-series sales performance aggregated by month.
     columns:
+      - name: sale_year
+        description: Year of the order (truncated to year).
+        tests:
+          - not_null      
       - name: sale_month
         description: Month of the order (truncated to month).
         tests:
